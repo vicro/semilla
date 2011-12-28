@@ -20,14 +20,7 @@ h2. Usage
 
 Generate a TestRunner
 
-@param output file
-@param
 <pre><code>
-notextile. # Rake task to create the test runner actionscript
-notextile. #
-notextile. # @param output file
-notextile. # @param test classes file list
-notextile. # @param report server port
 Semilla::test_runner "outputfile.as", FileList["test-src/**/*Test.as"], 1026
 
 </code></pre>
@@ -35,19 +28,13 @@ Semilla::test_runner "outputfile.as", FileList["test-src/**/*Test.as"], 1026
 
 Run the test and obtain a report.
 <pre><code>
-notextile. # Rake task to test a swf and get a report in junit xml format.
-notextile. #
-notextile. # @param task id
-notextile. # @param dependencies
-notextile. Semilla::flex_unit :taskname => [dependencies]] do |t|
-notextile.    #Configuration options
-notextile.    #    serverPort :player, :swf, :reportpath, :timeout
-notextile.    #    serverPort :player, :swf, :reportpath, :timeout
-notextile.    t.serverPort = 1026
-notextile.    t.swf = "app.swf"
-notextile.    t.reportpath = "reports"
-notextile.    t.timeout = 10
-notextile. end
+
+ Semilla::flex_unit :taskname => [dependencies]] do |t|
+    t.serverPort = 1026
+    t.swf = "app.swf"
+    t.reportpath = "reports"
+    t.timeout = 10
+ end
 
 </code></pre>
 
