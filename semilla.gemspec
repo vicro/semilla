@@ -1,12 +1,12 @@
 
 # -*- encoding: utf-8 -*-
-#$:.push('lib')
+$:.push('lib')
 require "semilla/version"
 
 Gem::Specification.new do |s|
   s.name     = "semilla"
-  s.version  = Semilla::VERSION.dup
-  s.date     = "2011-12-26"
+  s.version  = Semilla::VERSION
+  s.date     = "2011-12-28"
   s.summary  = "Rake tasks for flexunit4"
   s.email    = "support@semilla.com"
   s.homepage = "https://github.com/Darkoleptiko/semilla"
@@ -21,7 +21,7 @@ EOF
     # Examples:
     # [:runtime,     "rack",  "~> 1.1"],
     # [:development, "rspec", "~> 2.1"],
-      [:sprout_flashsdk, "flashsdk", "~> 1.0"]
+      [:sprout_flashsdk, "flashsdk", "~> 1.0.29.pre"]
   ]
   
   s.files         = Dir['**/*']
