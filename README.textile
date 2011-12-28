@@ -20,6 +20,7 @@ h2. Usage
 
 Generate a TestRunner
 <pre><code>
+==
 #################################################################
 # Rake task to create the test runner actionscript
 #
@@ -27,11 +28,13 @@ Generate a TestRunner
 # @param test classes file list
 # @param report server port
 Semilla::test_runner "outputfile.as", FileList["test-src/**/*Test.as"], 1026
+==
 </code></pre>
 
 
 Run the test and obtain a report.
 <pre><code>
+==
 #################################################################
 # Rake task to test a swf and get a report in junit xml format.
 #
@@ -46,6 +49,7 @@ Semilla::flex_unit :taskname => [dependencies]] do |t|
    t.reportpath = "reports"
    t.timeout = 10
 end
+==
 </code></pre>
 
 h2. MIT License
