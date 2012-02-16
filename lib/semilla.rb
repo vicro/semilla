@@ -4,6 +4,8 @@ require 'semilla/report_server'
 require 'semilla/reports'
 require 'semilla/test'
 require 'semilla/test_runner'
+require 'semilla/platform'
+require 'semilla/flash_player'
 
 
 ## Rake usage

@@ -60,9 +60,7 @@ module Semilla
             flashbin = ENV['FLASH_PLAYER']
             #Run the flash player
             puts "Running flash..."
-            command = "\"#{flashbin}\" \"#{@swf}\""
-            puts command
-            fr = %x[#{command}]
+            fr = Semilla::run_player(flashbin, swf)
           end
         rescue Timeout::Error
           fail "Flash player timeout!!!"
