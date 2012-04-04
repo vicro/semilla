@@ -21,7 +21,7 @@ EOF
     # Examples:
     # [:runtime,     "rack",  "~> 1.1"],
     # [:development, "rspec", "~> 2.1"],
-      [:sprout_flashsdk, "flashsdk", "~> 1.0.29.pre"]
+      [:sprout_flashsdk, "flashsdk", "~> 1.1.0.pre"]
   ]
   
   s.files         = Dir['**/*']
