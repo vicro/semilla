@@ -57,7 +57,7 @@ module Semilla
 
         begin
           status = Timeout::timeout @timeout do
-            flashbin = ENV['FLASH_PLAYER']
+            flashbin = Semilla::get_player
             #Run the flash player
             puts "Running flash..."
             fr = Semilla::run_player(flashbin, swf)
