@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.date     = "2011-12-28"
   s.summary  = "Rake tasks for flexunit4"
   s.email    = "support@semilla.com"
-  s.homepage = "https://github.com/Darkoleptiko/semilla"
+  s.homepage = "https://github.com/vicro/semilla"
   s.authors  = ['Victor G. Rosales']
   
   s.description = <<-EOF
